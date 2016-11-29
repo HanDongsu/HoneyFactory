@@ -9,19 +9,17 @@ public class Comment implements Serializable{
   
   static SimpleDateFormat format = new SimpleDateFormat("yyyy-MM-dd");
   protected int cmtNo;
-  protected int comentThread;
-  protected int comentDepth;
-  protected String coment;
+  protected int commentThread;
+  protected int commentDepth;
+  protected String comment;
   protected String writerNick;
   protected String contents;
   protected Date createdDate;     // 이제 java.sql.Date 타입으로 날짜 정보를 제대로 다뤄보자!
   protected String createdDate2;  //birth
-  protected int no;
+  protected int boardNo;
   protected int memberNo;
-  protected int not_use_no;
+  protected int notUsingNo;
   protected String commentMemberPhoto;
-  
-  
   
   public String getCommentMemberPhoto() {
     return commentMemberPhoto;
@@ -29,19 +27,17 @@ public class Comment implements Serializable{
   public void setCommentMemberPhoto(String commentMemberPhoto) {
     this.commentMemberPhoto = commentMemberPhoto;
   }
-  public int getNot_use_no() {
-    return not_use_no;
+  public int getNotUsingNo() {
+    return notUsingNo;
   }
-  public void setNot_use_no(int not_use_no) {
-    this.not_use_no = not_use_no;
+  public void setNotUsingNo(int notUsingNo) {
+    this.notUsingNo = notUsingNo;
   }
-  
-  
-  public int getNo() {
-    return no;
+  public int getBoardNo() {
+    return boardNo;
   }
-  public void setNo(int no) {
-    this.no = no;
+  public void setBoardNo(int boardNo) {
+    this.boardNo = boardNo;
   }
   public int getMemberNo() {
     return memberNo;
@@ -62,23 +58,23 @@ public class Comment implements Serializable{
   public void setCmtNo(int cmtNo) {
     this.cmtNo = cmtNo;
   }
-  public int getComentThread() {
-    return comentThread;
+  public int getCommentThread() {
+    return commentThread;
   }
-  public void setComentThread(int comentThread) {
-    this.comentThread = comentThread;
+  public void setCommentThread(int comentThread) {
+    this.commentThread = comentThread;
   }
-  public int getComentDepth() {
-    return comentDepth;
+  public int getCommentDepth() {
+    return commentDepth;
   }
-  public void setComentDepth(int comentDepth) {
-    this.comentDepth = comentDepth;
+  public void setCommentDepth(int comentDepth) {
+    this.commentDepth = comentDepth;
   }
-  public String getComent() {
-    return coment;
+  public String getComment() {
+    return comment;
   }
   public void setComent(String coment) {
-    this.coment = coment;
+    this.comment = coment;
   }
   public String getWriterNick() {
     return writerNick;
@@ -92,5 +88,4 @@ public class Comment implements Serializable{
   public void setContents(String contents) {
     this.contents = contents;
   }
-  
 }
