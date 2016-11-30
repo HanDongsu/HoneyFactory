@@ -19,7 +19,7 @@ public class Messages {
 		return format;
 	}
 	public static void setFormat(SimpleDateFormat format) {
-		Boards.format = format;
+		honey_boards.format = format;
 	}
 
 	public Date getInsertDate() {
